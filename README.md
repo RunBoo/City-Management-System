@@ -18,4 +18,15 @@
 下载后直接双击runbo.sln即可运行（数据已内置）
 
 系统使用截图：
+
+![Inage text](https://github.com/RunBoo/City-Management-System/blob/master/runbo/img/MainMenu.jpg)
+
 ![Inage text](https://github.com/RunBoo/City-Management-System/blob/master/runbo/img/Main.jpg)
+
+![Inage text](https://github.com/RunBoo/City-Management-System/blob/master/runbo/img/Green.jpg)
+
+![Inage text](https://github.com/RunBoo/City-Management-System/blob/master/runbo/img/Education.jpg)
+
+![Inage text](https://github.com/RunBoo/City-Management-System/blob/master/runbo/img/Business.jpg)
+
+![Inage text](https://github.com/RunBoo/City-Management-System/blob/master/runbo/img/life.jpg)

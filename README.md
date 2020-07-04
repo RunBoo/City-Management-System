@@ -16,3 +16,6 @@
 
 运行方式：
 下载后直接双击runbo.sln即可运行（数据已内置）
+
+系统使用截图：
+![Inage text](https://github.com/RunBoo/City-Management-System/blob/master/runbo/img/Main.jpg)

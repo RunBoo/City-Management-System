@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TraV</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <link href="css/cssreset.css" rel="stylesheet" type="text/css"/>
+
+
+</head>
+<body>
+    
+
+        <div  class="content">
+
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+                <meta http-equiv="Content-Type" content="text/html; charset=utf8">
+                <style type="text/css">
+                    html,body{height:100%;margin:0px;padding:0px;font-family:"微软雅黑";font-size:14px;}
+                    #allmap{height:630px;width:100%;}
+                    .optionpanel{margin: 10px;}
+                    #r-result{width:100%;}
+                    #r-result p{margin:5px 0 0 10px;}
+                </style>
+                <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=7OV3ewXplRwrOHTzXIm9gxqG1jGjzMzl"></script>
+                <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+                <title>个性底图设置模板Demo页</title>
+            </head>
+            <body>
+            <div id="allmap"></div>
+            <div id="r-result">
+                <div class="optionpanel">
+                    <label>选择主题</label>
+                    <select id="stylelist" onchange="changeMapStyle(this.value)"></select>
+                </div>
+                
+            </div>
+            </body>
+            </html>
+            <script type="text/javascript" src="http://developer.baidu.com/map/custom/stylelist.js"></script>
+            <script type="text/javascript">
+                //初始化模板选择的下拉框
+                var sel = document.getElementById('stylelist');
+                for(var key in mapstyles){
+                    var style = mapstyles[key];
+                    var item = new  Option(style.title,key);
+                    sel.options.add(item);
+                }
+                var map = new BMap.Map("allmap");
+                window.map = map;
+                var point = new BMap.Point(118.75, 32.02);
+
+                map.addControl(new BMap.NavigationControl());               // 添加平移缩放控件
+                map.addControl(new BMap.ScaleControl());                    // 添加比例尺控件
+                map.addControl(new BMap.OverviewMapControl());              //添加缩略地图控件
+                map.enableScrollWheelZoom();                            //启用滚轮放大缩小
+                map.addControl(new BMap.MapTypeControl());          //添加地图类型控件
+                map.disable3DBuilding();
+                map.centerAndZoom(point, 14);
+
+
+                <!--changeMapStyle('default')
+                sel.value = 'default';
+
+                function changeMapStyle(style){
+                    map.setMapStyle({style:style});
+                    $('#desc').html(mapstyles[style].desc);-->
+                }
+            </script>
+
+
+
+        </div><!--内容-->
+
+        <footer><!--页脚-->
+        </footer>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--<div class="mask">-->
+
+<!--    </div>
+    <div id="sidebar">
+        <ul>
+            <li><a href="#">item1</a></li>
+            <li><a href="#">item2</a></li>
+            <li><a href="#">item3</a></li>
+            <li><a href="#">item4</a></li>
+            <li><a href="#"	>item5</a></li>
+        </ul>
+    </div>-->
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

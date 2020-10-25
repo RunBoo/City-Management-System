@@ -72,6 +72,7 @@ To test your code, you can use CovidDistanceTest.cpp.  To compile to an executab
 Note that this will only work once you have implemented the constructor and functions discussed above.
 
 
+Hava done
 ----
 
 # Solving the Countdown Numbers Game
